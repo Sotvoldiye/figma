@@ -43,11 +43,9 @@
 html{
     height: 100%;
     scroll-behavior: smooth;
-   
 }
 
 body{
-    
     height: 100%;
     display: flex;
     font-family: "Montserrat";
@@ -56,40 +54,37 @@ body{
     line-height: 23px;
     color: rgba(108, 114, 137, 1);
     background-color: rgba(242, 234, 226, 1);
-
 }
 
 .section{
     align-items: center;
     background-color: #fff;
-    border-radius: 10px;
-    /* display: flex; */
     margin-top: auto;
-    margin-bottom: auto;
-    /* justify-content: center;
-    align-items: center; */
-    
+    margin-bottom: auto;   
     margin-right: auto;
     margin-left: auto;
+    border-radius: 10px;
 }
+
   .container {  
- 
     margin-right: auto;
     margin-left: auto; 
     display: flex;
-    
     font-family:'montserrat' sans-serif;
     background-color: #fff;
     max-width: 600px;
     height: 450px;
 }
 .container__img {
-   
+  
 }
 .img__image {
-    border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+
 }
 .container__text {
+    border-radius:10px;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 32px;
@@ -113,7 +108,8 @@ body{
     font-weight: 700;
     font-size: 32px;
     line-height:32px;
-    margin-top: 20px;
+    margin-top: 10px;
+    color: #1C232B;
     
 }
 .text-text1 {
@@ -123,9 +119,17 @@ body{
     line-height: 23px;
     font-weight: 500;
     color: #6C7289;
-    margin-top: 24px;
- 
+    /* margin-top: 24px; */
+    /* margin-bottom: 29px; */
 }
+
+.paragaph{
+  display: flex;
+  justify-content:left;
+  align-items:center;
+  gap: 19px;
+}
+
 .text-narx {
     font-family: 'Fraunces';
     font-size: 32px;
@@ -135,6 +139,7 @@ body{
 }
 .text-small {
     font-family: 'Montserrat';
+    font-weight: 500;
     font-size: 13px;
     line-height: 23px;
     color: #6C7289;
@@ -150,4 +155,9 @@ margin-bottom: 32px;
 border-radius: 8px;
 text-decoration: none;
 color: #fff
+}
+
+.link:hover{
+  background-color:#1A4032;
+  transition: all 0.2s ;
 }
